@@ -1,13 +1,106 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: grey;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 1rem;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav {
+  width: 25%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.input {
+  margin-top: 1.75rem;
+  margin-bottom: 1.25rem;
+  border: 2px soild black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.form input {
+  width: 25%;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.userProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.info {
+  display: inherit;
+  flex-direction: row;
+}
+
+.info button {
+  margin: 2rem;
+}
+
+.text {
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+  font-size: 1.1rem;
+}
+
+thead {
+  background-color: lightgrey;
+}
+
+td th {
+  border: 0.75px solid black;
+  padding: 5rem; 
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.img {
+  padding-bottom: 2rem;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.err {
+  border: 2px solid green;
+  color: red;
+  font-size: 1.5rem;
 }
